@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mail Submission Form</title>
+</head>
+<body>
+	<h1>Mail Submission Form</h1>
+	<form action="/mail" method="get">
+
+		<input type="text" name="weight" placeholder="Enter item weight in ounces">
+
+		<h2>Mail Type:</h2>
+		<select name="type">
+			<option></option>
+			<option>Letters(Stamped)</option>
+			<option>Letters(Metered)</option>
+			<option>Large Envelopes(Flats)</option>
+			<option>Parcels</option>
+		</select>
+
+		<br><br>
+		<input type="submit" value="Get Result">
+
+	</form>
+</body>
+</html>
