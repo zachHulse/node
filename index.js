@@ -70,6 +70,10 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
+app.get('/cool', function(request, response) {
+  response.send(cool());
+});
+
 app.get('/mail', function(request, response){
 	var params = url.parse(request.url, true). query;
 	var weight = Number(params.weight);
